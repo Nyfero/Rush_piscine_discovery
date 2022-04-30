@@ -37,7 +37,6 @@
         background-color: #3e8e41;
         color: white;
       }
-	  
       .section{
         display: flex;
         justify-content: center;
@@ -65,10 +64,8 @@
       .hflex, .vflex {
         display: flex;
       }
-	  
       .vflex {
         flex-direction: column;
-		align-items: center;
       }
 
       #section1{
@@ -76,6 +73,17 @@
         font-family: monospace;
         color: #DDD;
       }
+
+      .skills tr td {
+        border-radius: 25px;
+        background: #FFF;
+        color: #000;
+        padding: 90px 20px;
+        width: 200px;
+        text-align: center;
+        justify-content: center;
+      }
+
     </style>
   </head>
   <body>
@@ -83,9 +91,9 @@
       <center>
       <table>
         <tr>
-          <td> <div class="goto" onclick="scrol_to('section1')">section 1</div> </td>
-          <td> <div class="goto" onclick="scrol_to('section2')">section 2</div> </td>
-          <td> <div class="goto" onclick="scrol_to('section3')">section 3</div> </td>
+          <td> <div class="goto" onclick="scrol_to('section1')">Profile</div> </td>
+          <td> <div class="goto" onclick="scrol_to('section2')">Skills</div> </td>
+          <td> <div class="goto" onclick="scrol_to('section3')">Contact info</div> </td>
         </tr>
       </table>
     </center>
@@ -95,12 +103,35 @@
       <div class="hflex">
         <div class="crop"> <img src="https://i.imgur.com/vs9yHwm.png" alt="profile picture (yoshi)"></img></div>
         <div class="vflex" style="vertical-align: middle;">
-          <b><p class="name1">Milan</p>
-          <p class="name2">stud</p></b>
+          <b><p>Hack3900</p>
+          <p>Student</p></b>
         </div>
       </div>
     </div>
-    <div class="section" style="background-color: yellow" id="section2">text2</div>
+    <div class="section" style="background-color: yellow" id="section2">
+      <table class="skills">
+        <tr>
+          <td>C</td>
+          <td>Python</td>
+          <td>javascript</td>
+          <td>html</td>
+          <td>CSS</td>
+          <td>Godot</td>
+          <td>Minecraft</td>
+          <td>Tetris</td>
+        </tr>
+        <tr>
+          <td>1 An</td>
+          <td>2 ans</td>
+          <td>1 semaine mais tkt</td>
+          <td>1 semaine mais ca passe</td>
+          <td>1 semaine mais nul</td>
+          <td>ne se prononce pas</td>
+          <td>Gamer</td>
+          <td>top 50 Fr</td>
+        </tr>
+      </table>
+    </div>
     <div class="section" style="background-color: green" id="section3">text3</div>
 
 
@@ -113,7 +144,7 @@
         if (a) a.stop();
         a = $([document.documentElement, document.body]).animate({
           scrollTop: $("#" + id).offset().top
-	  }, 100000);
+        }, 1000);
       }
     </script>
   </body>

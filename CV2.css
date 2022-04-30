@@ -1,0 +1,91 @@
+html {
+	scroll-behavior: smooth;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#bar {
+	overflow: hidden;
+	background-color: #7448f7;
+	color: white;
+	justify-content: center;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+#section1 {
+	background-color: black;
+	background-image: url("https://images.unsplash.com/photo-1475738972911-5b44ce984c42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+	background-size: 100% 100%;
+	font-size:100;
+	font-family: monospace;
+	color: #DDD;
+}
+
+.goto {
+	border-radius: 25px;
+	background: #AAF;
+	color: #404;
+	padding: 20px;
+	width: 200px;
+	height: 10%;
+	text-align: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.goto:hover {
+	background-color: #3e8e41;
+	color: white;
+}
+
+.section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.crop {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.crop img {
+	width: 1280;
+	height: 720;
+	margin: -100px 0 0 -450px;
+}
+
+.hflex, .vflex {
+	display: flex;
+}
+
+.vflex {
+	flex-direction: column;
+}
+
+.skills tr td {
+	border-radius: 25px;
+	background: #FFF;
+	color: #000;
+	padding: 90px 20px;
+	width: 200px;
+	text-align: center;
+	justify-content: center;
+}
