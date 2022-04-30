@@ -19,22 +19,23 @@ h1 {
 	color: white;
 }
 
+a:link {text-decoration: none;}
+
+a:visited {text-decoration: none;}
+
+a:hover {text-decoration: none;}
+
+a:active {text-decoration: none;}
+
 p {
 	font-size: 32px;
 	font-style: italic;
 	color: cyan;
+	cursor: default;
 }
 
 .row {
 	padding-top: 15vh;
-}
-
-a {
-	left: 0;
-}
-
-b {
-	right: 0;
 }
 
 .a:hover {
