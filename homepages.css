@@ -9,13 +9,13 @@ body {
 
 main {
 	text-align: center;
-	padding-top: 15vh;
+	padding-top: 5vh;
 }
 
 h1 {
 	font-style: oblique;
 	font-family: cursive;
-	font-size: 64px;
+	font-size: 5vh;
 	color: white;
 }
 
@@ -28,7 +28,7 @@ a:hover {text-decoration: none;}
 a:active {text-decoration: none;}
 
 p {
-	font-size: 32px;
+	font-size: 3vh;
 	font-style: italic;
 	color: cyan;
 	cursor: default;
@@ -38,42 +38,31 @@ p {
 	padding-top: 15vh;
 }
 
-.a:hover {
-	background-image: url("https://i.imgur.com/vs9yHwm.png");
-	background-attachment: scroll;
-	background-position: center;
-	background-size: 35vh 35vw;
-	background-repeat: no-repeat;
-	padding-left: 15%;
-	padding-top: 15%;
-	padding-right: 15%;
-	padding-bottom: 15%;
-	font-size: 0;
-}
-
-.b:hover {
-	background-image: url("https://i.imgur.com/ODJlzZl.png");
-	background-attachment: scroll;
-	background-position: center;
-	background-size: 35vh 35vw;
-	background-repeat: no-repeat;
-	padding-left: 15%;
-	padding-top: 15%;
-	padding-right: 15%;
-	padding-bottom: 15%;
-	font-size: 0;
-}
-
 .goto {
 	border-color: red;
-	border-radius: 25px;
+	border-radius: 3vh;
 	background: #AAF;
 	color: #404;
-	padding: 20px;
-	width: 200px;
-	height: 10%;
+	padding-left: 9vh;
+	padding-right: 9vh;
+	padding-top: 9vh;
+	padding-bottom: 9vh;
 	text-align: center;
 	justify-content: center;
 	cursor: pointer;
 	transition: 0.3s;
+}
+
+.goto:hover {
+	background-position: center;
+	background-size: cover;
+	color:#00000000;
+}
+
+.img_1:hover {
+	background-image: url("https://i.imgur.com/vs9yHwm.png");
+}
+
+.img_2:hover {
+	background-image: url("https://i.imgur.com/ODJlzZl.png");
 }
